@@ -7,7 +7,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/49/1b/20a206161103b7d5005f3d63cfad58995be9f786499af0d90e604c8d009a/pixi_skills-${{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/p/pixi-skills/pixi_skills-${{ version }}.tar.gz
   sha256: 576f751a99c42773f722c926bbc5b54cb8959776052217e6e4f8475bb6696a20
 
 build:
@@ -35,7 +35,9 @@ tests:
       imports:
         - pixi_skills
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - pixi-skills --help
 
