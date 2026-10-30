@@ -1,5 +1,5 @@
 context:
-  version: "0.1.6"
+  version: "0.1.7"
   python_min: "3.13"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/pixi-skills/pixi_skills-${{ version }}.tar.gz
-  sha256: 576f751a99c42773f722c926bbc5b54cb8959776052217e6e4f8475bb6696a20
+  sha256: cf231501678c17bfbc05b990071d9ab050f9b0744b795e3572438cea32b7fe2b
 
 build:
   noarch: python
